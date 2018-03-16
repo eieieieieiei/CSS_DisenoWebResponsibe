@@ -1,0 +1,161 @@
+body{
+  font-family: "Dancing Script";
+  background: black;
+}
+header{
+  animation-name: MiAnimacion;
+  animation-duration: 2s;
+}
+.cabezera{
+  border-radius: 10px 10px 0 0;
+  background-color: #5b7989;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media (max-width: 900px){
+  .cabezera{
+    width: 100%;
+  }
+  .titulo{
+    width: 100%;
+  }
+  #menu-principal {
+    width: 100%;
+  }
+  #menu-principal ul{
+    float: left;
+    position: relative;
+    left: 50%;
+  }
+  #menu-principal ul li{
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+}
+.titulo{
+  height: auto;
+  display: block;
+  float: left;
+  text-align: center;
+  color:  white;
+}
+.titulo h1{
+  text-shadow: 0 0 2px #02010a;
+  //font-size: 24px;
+  margin: inherit;
+}
+#menu-principal{
+  display: block;
+  height: auto;
+  text-align: left;
+  float: right;
+}
+#menu-principal ul{
+  list-style-type: none;
+  position: relative;
+  /*overflow: hidden;*/
+  padding: 0;
+}
+
+#menu-principal ul li a{
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#menu-principal ul li a:hover{
+  text-decoration: none;
+}
+#menu-principal ul li a.active{
+  text-decoration: none;
+}
+
+/***  Para Desktop ***/
+@media (min-width: 900px){
+  .cabezera{
+    width: 80%;
+    height: auto;
+  }
+  .titulo{
+    width: 50%;
+  }
+  #menu-principal{
+    width: 50%;
+  }
+
+  #menu-principal ul{
+    float: left;
+    position: relative;
+    left: 50%;
+  }
+  #menu-principal ul li{
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+}
+
+/********************************************/
+/**        Animacion para el header        **/
+/********************************************/
+@-webkit-keyframes MiAnimacion{
+	0% {
+		margin-top: 150%;
+	}
+	60% {
+		margin-top: -5%;
+	}
+	100% {
+		margin-top: 0%;
+	}
+}
+
+/*******************************************/
+/**          pie de la pagina             **/
+/*******************************************/
+/***  Para Desktop ***/
+@media (min-width: 900px){
+  .foot{
+    width: 80%;
+  }
+  .contacto, .terminos, .redessociales, .derechos{
+    width: 25%;
+  }
+}
+
+/***  Para Mobile ***/
+@media (max-width: 900px){
+  .foot {
+    width: 100%;
+  }
+  .contacto, .terminos, .redessociales, .derechos{
+    width: 100%;
+  }
+}
+
+.foot {
+  height: auto;
+  background: #C6d5c5;
+  margin: auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 1em 0 1em 0;
+}
+.contacto, .terminos, .redessociales, .derechos{
+  text-align: center;
+}
+.redessociales img[src$='.svg']{
+  border-radius: 50px;
+}
+.derechos img[src$='.svg']{
+  border-radius: 30px;
+}
+img{
+  box-shadow: 2px 2px #02010a;
+}
