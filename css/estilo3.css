@@ -1,0 +1,73 @@
+/***  Para Desktop ***/
+@media (min-width: 900px){
+  .galeria{
+    width: 80%;
+  }
+  .paisaje1, .paisaje2, .paisaje3, .paisaje4, .paisaje5, .paisaje6{
+    width: 33.33%;
+  }
+}
+
+/***  Para Mobile ***/
+@media (max-width: 900px){
+  .galeria{
+    width: 100%;
+  }
+  .paisaje1, .paisaje2, .paisaje3, .paisaje4, .paisaje5, .paisaje6{
+    width: 100%;
+  }
+}
+/***     Parametros Generales    ***/
+.galeria {
+  height: auto;
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  background: #d5c75f;
+  margin: auto;
+}
+.paisaje1, .paisaje2, .paisaje3, .paisaje4, .paisaje5, .paisaje6{
+  padding: 1em 0 1em 0;
+  align-items: center;
+}
+.paisaje1 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.paisaje2 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+.paisaje3 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+.paisaje4 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+.paisaje5 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+.paisaje6 img{
+  display: block;
+  width: 80%;
+  margin: auto;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
